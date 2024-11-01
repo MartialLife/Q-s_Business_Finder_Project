@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Finder - Q's Desktop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Days+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header & Nav Start-->
+    <header>
+      <nav class="mainNav">
+        <div class="mainNavLeft">
+          <img src="Images/BFlogo.png" height="30px" alt="Logo" />
+          <h1>BUSINESS<span>FINDER</span></h1>
+          <ul class="mainPages">
+            <li><a href="about.html" title="About">About</a></li>
+            <li><a href="events.html" title="Events">Events</a></li>
+            <li><a href="members.html" title="Members">Members</a></li>
+            <li><a href="contact.html" title="Contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <ul class="mainLinks">
+          <a href="members.html" class="buttonBlack" title="Become a member"
+            >BECOME A MEMBER</a
+          >
+          <a href="tel:+27835555555"
+            ><ion-icon
+              name="logo-whatsapp"
+              class="whatsapp"
+              title="WhatsApp"
+            ></ion-icon
+          ></a>
+        </ul>
+        <div class="toggle_btn">
+          <ion-icon
+            name="ellipsis-horizontal-outline"
+            class="hamburger"
+          ></ion-icon>
+        </div>
+      </nav>
+      <nav class="dropdown_menu">
+        <ul class="pages">
+          <li><a href="about.html" title="About">About</a></li>
+          <li><a href="events.html" title="Events">Events</a></li>
+          <li><a href="members.html" title="Members">Members</a></li>
+          <li><a href="contact.html" title="Contact">Contact</a></li>
+        </ul>
+
+        <ul class="links">
+          <a href="members.html" class="buttonBlack" title="Become a member"
+            >BECOME A MEMBER</a
+          >
+          <a href="tel:+27835555555"
+            ><ion-icon
+              name="logo-whatsapp"
+              class="whatsapp"
+              title="WhatsApp"
+            ></ion-icon
+          ></a>
+        </ul>
+      </nav>
+
+      <script>
+        const toggleBtn = document.querySelector(".toggle_btn");
+        const toggleBtnIcon = document.querySelector(".toggle_btn i");
+        const dropDownMenu = document.querySelector(".dropdown_menu");
+
+        toggleBtn.onclick = function () {
+          dropDownMenu.classList.toggle("open");
+          const isOpen = dropDownMenu.classList.contains("open");
+
+          toggleBtnIcon.classList = isOpen ? "hamburger1" : "hamburger";
+        };
+      </script>
+      <section class="banner">
+        <h1>Events</h1>
+      </section>
+    </header>
+    <!-- Header & Nav End-->
+
+    <!-- Main Body Start-->
+    <main>
+      <section class="heading">
+        <ul class="areas">
+          <li><a href="#" class="areasActive">All</a></li>
+          <li><a href="#">Mossel Bay</a></li>
+          <li><a href="#">George</a></li>
+        </ul>
+        <p>Past Events</p>
+      </section>
+      <section class="content">
+        <ul class="businesses">
+          <li class="item">
+            <a href="">
+              <figure class="businessLogo" width="250px">
+                <img
+                  src="Images/New Png Logo.png"
+                  width="200px"
+                  alt="Company Logo"
+                />
+              </figure>
+              <figcaption class="caption1">
+                Business Name <br />Date<ion-icon
+                  name="arrow-forward-outline"
+                  class="arrow"
+                ></ion-icon>
+              </figcaption>
+              <figcaption class="caption2">
+                <span>T:</span> Number <br /><span>E:</span> Email <br /><span
+                  >A:</span
+                >
+                Address
+              </figcaption></a
+            >
+          </li>
+          <li class="item">
+            <a href="">
+              <figure class="businessLogo" width="250px">
+                <img
+                  src="Images/New Png Logo.png"
+                  width="200px"
+                  alt="Company Logo"
+                />
+              </figure>
+              <figcaption class="caption1">
+                Business Name <br />Date<ion-icon
+                  name="arrow-forward-outline"
+                  class="arrow"
+                ></ion-icon>
+              </figcaption>
+              <figcaption class="caption2">
+                <span>T:</span> Number <br /><span>E:</span> Email <br /><span
+                  >A:</span
+                >
+                Address
+              </figcaption></a
+            >
+          </li>
+          <li class="item">
+            <a href="">
+              <figure class="businessLogo" width="250px">
+                <img
+                  src="Images/New Png Logo.png"
+                  width="200px"
+                  alt="Company Logo"
+                />
+              </figure>
+              <figcaption class="caption1">
+                Business Name <br />Date<ion-icon
+                  name="arrow-forward-outline"
+                  class="arrow"
+                ></ion-icon>
+              </figcaption>
+              <figcaption class="caption2">
+                <span>T:</span> Number <br /><span>E:</span> Email <br /><span
+                  >A:</span
+                >
+                Address
+              </figcaption></a
+            >
+          </li>
+          <li class="item">
+            <a href="">
+              <figure class="businessLogo" width="250px">
+                <img
+                  src="Images/New Png Logo.png"
+                  width="200px"
+                  alt="Company Logo"
+                />
+              </figure>
+              <figcaption class="caption1">
+                Business Name <br />Date<ion-icon
+                  name="arrow-forward-outline"
+                  class="arrow"
+                ></ion-icon>
+              </figcaption>
+              <figcaption class="caption2">
+                <span>T:</span> Number <br /><span>E:</span> Email <br /><span
+                  >A:</span
+                >
+                Address
+              </figcaption></a
+            >
+          </li>
+          <li class="item">
+            <a href="">
+              <figure class="businessLogo" width="250px">
+                <img
+                  src="Images/New Png Logo.png"
+                  width="200px"
+                  alt="Company Logo"
+                />
+              </figure>
+              <figcaption class="caption1">
+                Business Name <br />Date<ion-icon
+                  name="arrow-forward-outline"
+                  class="arrow"
+                ></ion-icon>
+              </figcaption>
+              <figcaption class="caption2">
+                <span>T:</span> Number <br /><span>E:</span> Email <br /><span
+                  >A:</span
+                >
+                Address
+              </figcaption></a
+            >
+          </li>
+          <li class="item">
+            <a href="">
+              <figure class="businessLogo" width="250px">
+                <img
+                  src="Images/New Png Logo.png"
+                  width="200px"
+                  alt="Company Logo"
+                />
+              </figure>
+              <figcaption class="caption1">
+                Business Name <br />Date<ion-icon
+                  name="arrow-forward-outline"
+                  class="arrow"
+                ></ion-icon>
+              </figcaption>
+              <figcaption class="caption2">
+                <span>T:</span> Number <br /><span>E:</span> Email <br /><span
+                  >A:</span
+                >
+                Address
+              </figcaption></a
+            >
+          </li>
+        </ul>
+        <ol class="pageNumbers">
+          <li class="pageActive">1</li>
+          <li class="pageInactive">2</li>
+          <li class="pageInactive">3</li>
+          <li class="pageInactive">4</li>
+          <li class="pageInactive">5</li>
+        </ol>
+      </section>
+    </main>
+    <!-- Main Body End-->
+
+    <!-- Footer Start-->
+    <footer>
+      <section class="footerLeft">
+        <form action="" method="post" class="footerLeft">
+          <h3>Send us a mail</h3>
+          <input
+            type="text"
+            name="Name"
+            id="name"
+            placeholder="Name"
+            class="contact-inputs"
+            required
+          />
+          <input
+            type="email"
+            name="Email"
+            id="email"
+            placeholder="Email"
+            class="contact-inputs"
+            required
+          />
+          <textarea
+            name="Message"
+            id="message"
+            placeholder="Message"
+            class="contact-inputs"
+            required
+          ></textarea>
+          <button type="submit" title="Submit" class="buttonGreen">
+            SEND MESSAGE
+          </button>
+        </form>
+      </section>
+      <section class="footerRight">
+        <article class="contactDetails">
+          <h3>Contact Details</h3>
+          <p><span>T:</span> Number</p>
+          <p><span>E:</span> Email</p>
+        </article>
+        <div class="whatsapp">
+          <ion-icon name="logo-whatsapp" class="chat"
+            >Join us on WhatsApp</ion-icon
+          >
+          <h3>Join us on WhatsApp</h3>
+        </div>
+        <h4>Pages</h4>
+        <article class="footerPages">
+          <ul class="pagesList">
+            <li>About</li>
+            <li>Members</li>
+            <li>Events</li>
+          </ul>
+          <ul class="pagesList">
+            <li>Become a Member</li>
+            <li>Contact Us</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </article>
+        <p class="copyright">
+          The Business Finder - All Rights Reserved &copy 2024
+          <img src="Images/BFlogo.png" width="150px" alt="Logo" />
+        </p>
+      </section>
+    </footer>
+    <!-- Footer End-->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

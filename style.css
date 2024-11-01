@@ -1,0 +1,432 @@
+:root{
+    --white: #f6f6f6;
+    --ash: #d4d4ce;
+    --grey: #6c6c6a;
+    --green: #14a904;
+    --black: #131313;
+}
+html{
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+/* Header & Nav Start*/
+.header{
+    width: 100dvw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.mainNav{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 3rem;
+}
+.mainNavLeft{
+    display: flex;
+    align-items: center;
+}
+.mainNavLeft img{
+    display: flex;
+    align-items: center;
+}
+.mainNavLeft h1{
+    font-size: 0.9rem;
+    margin-right: 2rem;
+}
+span{
+    color: var(--green);
+}
+.mainPages{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.mainPages li a{ 
+    text-decoration: none;
+    color: var(--black);
+    font-size: 0.9rem;
+    line-height: 5rem;
+}
+.mainLinks{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap:2rem;
+}
+.mainLinks a{
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.buttonBlack{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+}
+.whatsapp{
+    color: var(--green);
+    font-size: 1.5rem;
+}
+
+.toggle_btn {
+    color: var(--black);
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    top: 5rem;
+    height: 0;
+    width: 100dvw;
+    background-color: rgba(236, 236, 235, 0.5);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: 0.5s cubic-bezier(0.24, 1.25, 0.66, 1.18);
+    z-index: 1;
+}
+
+.dropdown_menu.open {
+    height: 450px;
+    border-bottom: 1.8px solid var(--ash);
+    border-top: 1.8px solid var(--ash);
+}
+
+.dropdown_menu li {
+    width: 100%;
+    padding: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.dropdown_menu li a{
+    padding: 0 1rem;
+    text-decoration: none;
+    color: var(--black);
+    border-radius: 0.2rem;
+}
+.dropdown_menu .links{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.dropdown_menu .buttonBlack{
+    text-decoration: none;
+}
+@media(max-width: 1200px){
+    .mainPages,
+    .mainLinks {
+        display: none;
+    }
+
+    .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+.banner{
+    width: 100dvw;
+    height: 35dvh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(33, 33, 33, 0.5),rgba(33, 33, 33, 0.5)), url(Images/Banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: left;
+    justify-content: flex-end;
+    padding-left: 5rem;
+}
+.banner h1{
+    width:fit-content;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 0.8rem;
+    border-bottom: 0.4rem solid var(--green);
+}
+/* Header & Nav End*/
+
+/* Main Body Start*/
+.heading{
+    width: 100dvw;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 5rem;
+    background-color: var(--ash);
+}
+.heading a{
+    text-decoration: none;
+    color: var(--black);
+}
+.areas{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-weight: 500;
+}
+.areasActive{
+    width: fit-content;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem solid var(--green);
+}
+.heading p{
+    margin-right: 1rem;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100dvw;
+    max-height: fit-content;
+    padding: 2rem;
+}
+.businesses{
+    width: 100%;
+    max-height: fit-content;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.item{
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+} 
+.item a{ 
+    text-decoration: none;
+}
+.businessLogo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid var(--black)
+}
+.caption1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    background-color: var(--black);
+    color: var(--white);
+}
+.arrow{
+    color: var(--green);
+    font-size: 1.2rem;
+}
+.caption2{
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    color: var(--black);
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    background-color: var(--ash);
+}
+.pageNumbers{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin-bottom: 3rem;
+}
+.pageNumbers li{ 
+    padding: 0 0.5rem;
+    font-weight: 500;
+}
+.pageActive{
+    background-color: var(--green);
+}
+.pageInactive{
+    background-color: var(--black);
+    color: var(--white);
+}
+/* Main Body End*/
+
+/* Footer Start*/
+footer{
+    width: 100dvw;
+    display: flex;
+    background-image: linear-gradient(rgba(33, 33, 33, 0.8),rgba(33, 33, 33, 0.8)), url(Images/Banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footerLeft{
+    width: 50%;
+    height: fit-content;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+}
+.footerLeft h3{
+    width: 400px;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+.contact-inputs{
+    width: 500px;
+    height: 50px;
+    gap: 2rem;
+    outline: none;
+    border: 1.5px solid var(--white);
+    border-radius: 5px;
+    background-color: transparent;
+    padding-left: 20px;
+    color: var(--white);
+}
+.contact-inputs::placeholder{
+    color: var(--white);
+}
+.footerLeft textarea{
+    height: 120px;
+    padding-top: 15px;
+}
+
+.buttonGreen{
+    cursor: pointer;
+    padding: 0.3rem 0.8rem;
+    background-color: var(--green);
+    border-radius: 2rem;
+    border: none;
+    font-weight: 500;
+}
+.footerRight{
+    width: 50%;
+    height: fit-content;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+}
+.contactDetails{
+    margin: 2rem 0;
+}
+.footerRight h3{
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--white);
+}
+.footerRight p{
+    font-size: 0.8rem;
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+.whatsapp{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.footerPages{
+    display: flex;
+
+}
+.footerRight h4{
+    color: var(--white);
+    font-weight: 500;
+}
+.footerPages{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.pagesList{
+    list-style: none;
+}
+.pagesList li{
+    color: var(--white);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.copyright{
+    margin-top: -5rem;
+}
+
+@media(max-width: 1200px){
+    footer{
+        flex-direction: column;
+    }
+    .footerLeft{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .contact-inputs{
+        max-width: 90dvw;
+    }
+    .footerRight{
+        width: 100%;
+        align-items: center;
+    }
+    .contactDetails{
+        text-align: center;
+    }
+    .copyright{
+        margin-top: 0;
+        text-align: center;
+    }
+    .copyright img{
+        display: none;
+    }
+}
+@media(max-width: 768px){
+    .heading{
+        flex-direction: column;
+    }
+    .heading p{
+        margin-top: 3rem;
+    }
+}
+@media(max-width: 450px){
+    .whatsapp{
+        flex-direction: column;
+    }
+    .footerRight h3{
+        font-size: 1.2rem;
+    }
+}
+/* Footer End*/
