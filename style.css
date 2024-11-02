@@ -1,6 +1,6 @@
 :root{
     --white: #f6f6f6;
-    --ash: #d4d4ce;
+    --ash: #f5f4f4;
     --grey: #6c6c6a;
     --green: #14a904;
     --black: #131313;
@@ -47,6 +47,9 @@ html{
 }
 span{
     color: var(--green);
+}
+.smallSpan{
+    font-weight: 600;
 }
 .mainPages{
     display: flex;
@@ -151,7 +154,7 @@ span{
     height: 35dvh;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(rgba(33, 33, 33, 0.5),rgba(33, 33, 33, 0.5)), url(Images/Banner.jpg);
+    background-image: linear-gradient(rgba(33, 33, 33, 0.5),rgba(33, 33, 33, 0.5)), url(Images/banner-min-6725a53b36d96.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -159,7 +162,7 @@ span{
     justify-content: flex-end;
     padding-left: 5rem;
 }
-.banner h1{
+.banner h2{
     width:fit-content;
     color: var(--white);
     font-size: 2rem;
@@ -283,7 +286,7 @@ span{
 footer{
     width: 100dvw;
     display: flex;
-    background-image: linear-gradient(rgba(33, 33, 33, 0.8),rgba(33, 33, 33, 0.8)), url(Images/Banner.jpg);
+    background-image: linear-gradient(rgba(33, 33, 33, 0.8),rgba(33, 33, 33, 0.8)), url(Images/banner-min-6725a53b36d96.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
