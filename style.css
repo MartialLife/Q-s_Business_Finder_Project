@@ -322,6 +322,9 @@ footer{
 .contact-inputs::placeholder{
     color: var(--white);
 }
+.contact-inputs:focus{
+    border: 1.5px solid var(--green);
+}
 .footerLeft textarea{
     height: 120px;
     padding-top: 15px;
